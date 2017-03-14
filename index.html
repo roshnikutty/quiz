@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<title>Identify facts</title>
+<link rel="stylesheet" href="main.css">
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+<body>
+
+ <div class = "container">
+  <h1>Fact Quiz</h1>
+  
+  <div class = "js-start-button">
+   <button type = "submit" value = "start">Test your knowledge</button>
+  </div>
+  <div class = "score"></div>
+    <div class = "quiz-card noShow">
+      <form id = "quiz-form">
+        <label class = "question"></label><br><br>
+        <input type = "radio" name = "choice" value = "option1" id = "option1" required><label class = "a-label"> </label><br>
+        <input type = "radio" name = "choice" value = "option2" id = "option2"><label class = "b-label">  </label><br>
+        <input type = "radio" name = "choice" value = "option3" id = "option3"><label class = "c-label">  </label><br>
+        <input type = "radio" name = "choice" value = "option4" id = "option4"><label class = "d-label">  </label><br><br>
+        <label class = "correct-or-not"></label><br><br>
+      </form>
+      <div class = "pageNumber"></div>
+      <button class = "page" type = "submit" value = "next">Next</button>  
+    </div>
+
+<script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src = "app.js"></script>
+
+</html>
